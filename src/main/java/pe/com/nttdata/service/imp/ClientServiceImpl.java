@@ -1,9 +1,10 @@
-package pe.com.nttdata.service;
+package pe.com.nttdata.service.imp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.com.nttdata.model.Client;
 import pe.com.nttdata.repository.ClientRepository;
+import pe.com.nttdata.service.inf.ClientService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

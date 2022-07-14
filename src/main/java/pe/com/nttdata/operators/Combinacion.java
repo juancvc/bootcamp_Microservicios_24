@@ -1,7 +1,5 @@
 package pe.com.nttdata.operators;
 
-import pe.com.nttdata.model.Afiliado;
-import pe.com.nttdata.model.Afp;
 import reactor.core.publisher.Flux;
 
 import java.util.ArrayList;
@@ -10,7 +8,7 @@ import java.util.List;
 public class Combinacion {
 
     public void merge(){
-        List<Afiliado> afiliados1 = new ArrayList<>();
+        /*List<Afiliado> afiliados1 = new ArrayList<>();
         afiliados1.add(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0));
         afiliados1.add(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0));
         afiliados1.add(new Afiliado(3, "Jose", "Lopez",  "42222222", 80000.0));
@@ -31,11 +29,11 @@ public class Combinacion {
         Flux<Afp> flux3  = Flux.fromIterable(afps);
 
         Flux.merge(flux1, flux2, flux3)
-                .subscribe(p -> System.out.println(p.toString()));
+                .subscribe(p -> System.out.println(p.toString()));*/
     }
 
     public void zip(){
-        List<Afiliado> afiliados1 = new ArrayList<>();
+     /*   List<Afiliado> afiliados1 = new ArrayList<>();
         afiliados1.add(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0));
         afiliados1.add(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0));
         afiliados1.add(new Afiliado(3, "Jose", "Lopez",  "42222222", 80000.0));
@@ -54,16 +52,16 @@ public class Combinacion {
         Flux<Afiliado> flux1 = Flux.fromIterable(afiliados1);
         Flux<Afiliado> flux2 = Flux.fromIterable(afiliados2);
         Flux<Afp> flux3  = Flux.fromIterable(afps);
-
+*/
         /*Flux.zip(flux1, flux2, (p1, p2) -> String.format("Flux1: %s, Flux2: %s", p1, p2))
                 .subscribe(x -> System.out.println(x));*/
-
+/*
         Flux.zip(flux1, flux2, flux3)
-                .subscribe(x -> System.out.println(x.toString()));
+                .subscribe(x -> System.out.println(x.toString()));*/
     }
 
     public void zipWith(){
-        List<Afiliado> afiliados1 = new ArrayList<>();
+       /* List<Afiliado> afiliados1 = new ArrayList<>();
         afiliados1.add(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0));
         afiliados1.add(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0));
         afiliados1.add(new Afiliado(3, "Jose", "Lopez",  "42222222", 80000.0));
@@ -84,6 +82,6 @@ public class Combinacion {
         Flux<Afp> flux3  = Flux.fromIterable(afps);
 
         flux1.zipWith(flux2, (p1, p2) -> String.format("Flux1: %s, Flux2: %s", p1, p2))
-                .subscribe(x -> System.out.println(x.toString()));
+                .subscribe(x -> System.out.println(x.toString()));*/
     }
 }

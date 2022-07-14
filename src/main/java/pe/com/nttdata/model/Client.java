@@ -6,16 +6,17 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "cliente")
+@Document(collection = "client")
 @Data
 public class Client {
 
     @Id
     @BsonIgnore
-    private ObjectId id;
-    private String codigo;
+    private ObjectId idCliente;
+    private String idPersona;
     private String nombres;
     private String apellidos;
     private String tipoCliente;
     private String nroCuentaBancaria;
+    private String estado;
 }

@@ -1,6 +1,5 @@
 package pe.com.nttdata.operators;
 
-import pe.com.nttdata.model.Afiliado;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -10,13 +9,13 @@ import java.util.List;
 
 public class Condicion {
 
-    public void defaultIfEmpty(){
+   /* public void defaultIfEmpty(){
         Mono.just(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0))
                 .defaultIfEmpty(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0))
                 .subscribe(x -> System.out.println(x.toString()));
     }
-
-    public void takeUntil(){
+*/
+  /*  public void takeUntil(){
         List<Afiliado> afiliados = new ArrayList<>();
         afiliados.add(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0));
         afiliados.add(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0));
@@ -41,6 +40,6 @@ public class Condicion {
                 .subscribe(x -> x.toString());
 
         Thread.sleep(10000);
-    }
+    }*/
 
 }

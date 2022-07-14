@@ -5,7 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import pe.com.nttdata.model.Afiliado;
 import pe.com.nttdata.operators.*;
 import pe.com.nttdata.repository.ClientRepository;
 import reactor.core.publisher.Flux;
@@ -35,13 +34,13 @@ public class PrjDemoBcApplication /*implements CommandLineRunner*/ {
 	}*/
 
 	public void flux(){
-		List<Afiliado> afiliados = new ArrayList<>();
+	/*	List<Afiliado> afiliados = new ArrayList<>();
 		afiliados.add(new Afiliado(1, "Juan", "Perez",  "44444444", 50000.0));
 		afiliados.add(new Afiliado(2, "Pedro", "Torres",  "43333333", 10000.0));
 		afiliados.add(new Afiliado(3, "Jose", "Lopez",  "42222222", 80000.0));
 		afiliados.add(new Afiliado(4, "Raul", "Rosas",  "45555555", 90000.0));
 
-		Flux.fromIterable(afiliados).subscribe(p -> System.out.println(p));
+		Flux.fromIterable(afiliados).subscribe(p -> System.out.println(p));*/
 	}
 
 	/*public void fluxToMono(){

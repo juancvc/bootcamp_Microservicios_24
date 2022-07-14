@@ -3,12 +3,12 @@ package pe.com.nttdata.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.com.nttdata.model.Person;
-import pe.com.nttdata.service.IPesonService;
+import pe.com.nttdata.service.inf.IPesonService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/persona")
+@RequestMapping("/person")
 public class PersonController {
     @Autowired
     private IPesonService personService;

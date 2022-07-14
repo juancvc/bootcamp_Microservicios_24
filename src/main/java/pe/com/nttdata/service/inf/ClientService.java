@@ -1,4 +1,4 @@
-package pe.com.nttdata.service;
+package pe.com.nttdata.service.inf;
 
 import pe.com.nttdata.model.Client;
 import reactor.core.publisher.Flux;
