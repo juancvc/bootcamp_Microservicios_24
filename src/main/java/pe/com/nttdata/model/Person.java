@@ -16,5 +16,5 @@ public class Person {
     private String apellidos;
     private String dni;
     private Integer edad;
-
+    private String estado;
 }

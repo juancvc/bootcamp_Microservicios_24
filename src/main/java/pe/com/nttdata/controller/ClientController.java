@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 import java.lang.invoke.MethodHandles;
 
 @RestController
-@RequestMapping("/client")
+@RequestMapping("/Client")
 public class ClientController {
 
     @Autowired

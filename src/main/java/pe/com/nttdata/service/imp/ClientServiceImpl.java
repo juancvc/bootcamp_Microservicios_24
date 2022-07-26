@@ -34,6 +34,8 @@ public class ClientServiceImpl implements ClientService {
         return repository.findByCodigo(codigo);
     }
 
+
+
     /*@Override
     public Flux<Cliente> findClientByNombre(String nombre){
         return repository.findClientByNombre(nombre);
