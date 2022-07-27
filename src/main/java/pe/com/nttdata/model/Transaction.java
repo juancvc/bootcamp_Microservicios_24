@@ -14,8 +14,6 @@ public class Transaction {
     @BsonIgnore
     private String idTransaccion;
     private String tipo;
-    
-
     private Double monto;
     private String estado;
 }

@@ -23,7 +23,7 @@ public class ExternalUser {
     private String imeiCelular;
     private String correo;
     private String tipoCliente;
-    private int nroTransaccion;
+    private int    nroTransaccion;
     private String nroCuentaBancaria /***el usuario puede tener  un una cuenta bancaria para hacer transferencias**/;;
     private Double saldo;
     private String estado;
